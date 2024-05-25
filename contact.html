@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>편지쓰기</h1>
+    <hr>
+    <p>장발장에게 한마디하기</p>
+    <p>
+        <label>예 그냥 공부용으로 이메일 보내는 거 하나 만들어봤습니다...</label>
+        <input type="checkbox" name="" value="">
+    </p>
+    <form action="mailto:pingu0618@naver.com" method="post" enctype="text/plain"> <!--뭔가 입력값을 받기위해 처음에 적어줘야하는 것. 그 안에는 label과 input이 있다. action은 제출을 클릭하면 어캐할지-->
+        <label>보내는 사람</label>
+        <input type="text" name="yourName" value=""><br> <!--인풋은 종류가 정말 많다. 이건 입력하는 곳-->
+        <label>이메일</label> <!--비밀번호 넣는 곳. input이 안보임-->
+        <input type="email" name="yourEmail" value=""><br> <!--br은 줄바꿈-->
+        <label>보내는 내용</label>
+        <textarea name="youtMessage" rows="10" cols="30"></textarea><br>
+        <input type="submit" name=""><!--입력버튼-->
+    </form>
+</body>
+</html>
